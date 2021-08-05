@@ -1221,6 +1221,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .basket__item {
+  position: relative;
   display: flex;
   width: 100%;
   box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
@@ -1275,6 +1276,16 @@ h1, h2, h3, h4, h5, h6 {
 .basket-description__row dd {
   color: #6F6E6E;
   margin-left: 8px;
+}
+
+.basket__item-delete {
+  position: absolute;
+  top: 28px;
+  right: 22px;
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
 }
 
 dd.basket__item-price {
@@ -1691,6 +1702,20 @@ dd.basket__item-price {
   .basket__item-title {
     font-size: 16px;
     line-height: 19px;
+  }
+  .basket__item-delete {
+    top: 17px;
+    right: 12px;
+  }
+  .basket__item-delete svg {
+    width: 10px;
+    height: 11px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .basket__total-btn {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
